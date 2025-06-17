@@ -29,5 +29,29 @@ function exibirRegistros() {
     lista.appendChild(item);
   });
 }
+async function exportarRegistrosPDF() {
+  const { jsPDF } = window.jspdf;
+  const registros = JSON.parse(localStorage.getItem("registros")) || [];
 
+  if (registros.length === 0) {
+    alert("Nenhum registro encontrado para exportar.");
+    return;
+  }
+
+  const doc = new jsPDF();
+  doc.setFontSize(14);
+  doc.text("Registros de Carga Máxima - Meu PR", 10, 15);
+
+  let y = 25;
+  registros.forEach((reg, i) => {
+    doc.text(`${i + 1}. ${reg.exercicio} | ${reg.carga} ${reg.unidade} | ${reg.tipo} | ${reg.data || ''}`, 10, y);
+    y += 10;
+    if (y > 270) {
+      doc.addPage();
+      y = 20;
+    }
+  });
+
+  doc.save("meus-prs.pdf");
+}
 window.onload = exibirRegistros;
