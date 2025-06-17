@@ -1,9 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f9fb;
+  color: white;
   margin: 0;
   padding: 20px;
   text-align: center;
+  background-image: url('images/peso-de-treino.jpg'); /* ou outro caminho */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -24,13 +30,13 @@ input, select, button {
 }
 
 button {
-  background-color: #28a745;
+  background-color: #6d0d5d;
   color: white;
   border: none;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #ad35ab;
 }
 
 #resultado {
@@ -43,3 +49,13 @@ ul {
   padding: 0;
   font-size: 0.9em;
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* pode ajustar a opacidade */
+  z-index: -1;
+}
+
