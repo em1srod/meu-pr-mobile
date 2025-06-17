@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu PR Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>📱 Meu PR Mobile</h1>
+
+    <section>
+      <input type="number" id="valor" placeholder="Valor" />
+      <select id="tipoConversao">
+        <option value="kgToLb">Kg → Libras</option>
+        <option value="lbToKg">Libras → Kg</option>
+      </select>
+      <button onclick="converter()">Converter</button>
+      <p id="resultado"></p>
+    </section>
+
+    <section>
+      <h2>Últimos Registros</h2>
+      <ul id="listaRegistros"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
