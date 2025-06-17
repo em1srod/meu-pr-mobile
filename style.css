@@ -9,6 +9,7 @@ body {
 main {
   max-width: 400px;
   margin: auto;
+  padding: 20px;
 }
 
 input, select, button {
@@ -18,6 +19,8 @@ input, select, button {
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
+  display: block;
 }
 
 button {

@@ -17,4 +17,4 @@ Versão mobile simplificada do projeto Meu PR, com foco em acessibilidade rápid
 ## 👤 Autora
 
 Emilly Rodrigues  
-[LinkedIn](https://www.linkedin.com/in/emilly-rodrigues-po/)
+[LinkedIn](https://www.linkedin.com/in/emilly-rodrigues-qa/)
