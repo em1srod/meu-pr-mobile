@@ -18,8 +18,21 @@
         <option value="lbToKg">Lb → Kg</option>
       </select>
       <button onclick="converter()">Converter</button>
-      <button onclick="exportarRegistrosPDF()">Exportar em PDF</button>
       <p id="resultado"></p>
+        <input type="text" id="exercicio" placeholder="Exercício" />
+      <input type="number" id="carga" placeholder="Carga máxima" />
+      <select id="unidade">
+        <option value="kg">Kg</option>
+        <option value="lb">Lb</option>
+      </select>
+      <select id="tipo">
+        <option value="LPO">LPO</option>
+        <option value="Musculação">Musculação</option>
+        <option value="Peso Livre">Peso Livre</option>
+      </select>
+      <button onclick="registrarPR()">Registrar PR</button>
+      <button onclick="exportarRegistrosPDF()">Exportar em PDF</button>
+      
     </section>
 
     <section>
