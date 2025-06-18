@@ -1,18 +1,36 @@
 # 📱 Meu PR Mobile
 
-Versão mobile simplificada do projeto Meu PR, com foco em acessibilidade rápida via celular.
+Versão mobile simplificada do projeto **Meu PR**, com foco em acessibilidade rápida via celular e registro ágil de cargas máximas (PRs).
 
 ## 📌 Funcionalidades
 
-- Conversor rápido de Kg ↔ Libras
-- Exibição dos últimos registros salvos no localStorage
-- Interface responsiva e otimizada para uso mobile
+- ✅ Conversão rápida entre **Kg ↔ Libras**
+- ✅ Registro de **novos PRs** (Personal Records), com:
+  - Nome do exercício
+  - Carga máxima
+  - Unidade (kg ou lb)
+  - Tipo (LPO, Musculação, Peso Livre)
+  - Data e hora do registro
+- ✅ Visualização dos **últimos registros**
+- ✅ Exportação dos registros em **PDF**
+- ✅ Armazenamento local com **localStorage**
+- ✅ Interface **responsiva e otimizada** para dispositivos móveis
+
+## 🖼️ Preview
+
+![Screenshot do Meu PR Mobile](./screenshot.png) <!-- substitua com o caminho real se desejar adicionar imagem -->
 
 ## 🛠️ Tecnologias
 
-- HTML
-- CSS (mobile-first)
-- JavaScript
+- HTML5
+- CSS3 (mobile-first)
+- JavaScript (Vanilla)
+
+## 🚀 Melhorias futuras
+
+- Filtro por tipo de exercício
+- Ordenação por data ou carga
+- Compartilhamento rápido via WhatsApp
 
 ## 👤 Autora
 
